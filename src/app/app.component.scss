@@ -1,0 +1,74 @@
+
+
+.header .row{
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+.logo{
+    height: 100px;
+    > img{
+        height: 100%;
+        cursor: pointer;
+    }
+}
+ 
+ .formInput{
+    display: flex;
+   
+}
+}
+
+
+
+.movieCard{
+    height: 500px;
+    width: 100%;
+    cursor: pointer;
+   overflow: hidden;
+   position: relative;
+
+
+   
+   :hover .overView,
+   :active .overView,
+   :focus .overView{
+   display: block;
+   transform: translateY(0);
+   
+   }
+    > figure > img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .movieInfo{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(4,57,114);
+        color: #fff;
+        padding: 17px;
+    
+    }
+}
+
+ .overView{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    padding: 40px;
+    transform: translateY(100%);
+    display: none;
+    
+}
+
+.paraPadding{
+    padding: 5px;
+    text-align: center;
+}
